@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Gopi A</title>
+  <style>
+    :root {
+      --bg: #ffffff;
+      --fg: #16181d;
+      --muted: #5c6370;
+      --rule: #e3e6ea;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0f1115;
+        --fg: #e8eaed;
+        --muted: #9aa0a6;
+        --rule: #262a31;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font: 16px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    }
+    main {
+      max-width: 42rem;
+      margin: 0 auto;
+      padding: 6rem 1.5rem;
+    }
+    h1 {
+      margin: 0 0 0.75rem;
+      font-size: clamp(2rem, 5vw, 2.75rem);
+      font-weight: 650;
+      letter-spacing: -0.03em;
+    }
+    p { margin: 0 0 1rem; }
+    .tagline { color: var(--muted); font-size: 1.125rem; }
+    nav {
+      margin-top: 3rem;
+      border-top: 1px solid var(--rule);
+    }
+    nav a {
+      display: inline-block;
+      padding: 0.9rem 0;
+      margin-right: 1.5rem;
+      color: inherit;
+      text-decoration: none;
+      border-bottom: 1px solid var(--rule);
+    }
+    nav a:hover { border-bottom-color: currentColor; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Gopi A</h1>
+    <p class="tagline">Backend engineer working on distributed systems and reliability.</p>
+    <nav>
+      <a href="https://github.com/gopiak">GitHub</a>
+    </nav>
+  </main>
+</body>
+</html>
